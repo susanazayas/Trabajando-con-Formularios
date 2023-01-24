@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Variables */
+:root {
+    /* Variables de Colores */
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    /* Fuentes */
+    --fuente: 'Roboto', sans-serif;
+    /* Tamaños Tipográficos */
+    --parrafos: 12px;
+    --titulos: 24px;
+    --precios: 18px;
+    --descuento: 16px;
+    --descripcion: 16px;
+    --navegacion: 17px;
+}
+
+/* Estilos Generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+}
+
+li {
+    list-style: none; /* Quita las viñetas */
+}
+
+p {
+    font-size: var(--parrafos);
+}
+
+body {
+    background-color: var(--gris-claro);
+}
+
+/* Header */
+
+header {
+    background-color: var(--amarillo);
+    padding: 25px 0;
+}
+
+header div.logo {
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header div.busqueda {
+    width: auto;
+    margin-bottom: 10px;
+    display: none;
+
+}
+
+header div.logo__busqueda {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header div p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header nav {
+     display: none;
+
+}
+
+header nav ul.lista-superior {
+    margin-bottom: 15px;
+}
+
+header nav ul li a {
+    font-size: var(--parrafos);
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+header div.burger-menu {
+    background-color: var(--celeste);
+    border-radius: 5px;
+    color: white;
+    width: 30px;
+    padding: 7px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Secciones */
+
+.seccion__productos,
+.seccion__ofertas {
+    width: 90%;
+    margin: auto;
+}
+
+/* Productos */
+
+.seccion__productos--tarjeta2,
+.seccion__productos--tarjeta3,
+.seccion__productos--tarjeta4,
+.seccion__productos--oferta2,
+.seccion__productos--oferta3,
+.seccion__productos--oferta4 {
+    display: none;
+}
+
+.seccion__productos--tarjeta1,
+.seccion__productos--tarjeta2,
+.seccion__productos--tarjeta3,
+.seccion__productos--tarjeta4,
+.seccion__productos--oferta1,
+.seccion__productos--oferta2,
+.seccion__productos--oferta3,
+.seccion__productos--oferta4 {
+    margin-bottom: 10px;
+}
+
+.seccion__productos--titulo {
+    font-size: var(--titulos);
+    color: var(--gris-oscuro);
+    padding: 10px 0px;
+    text-align: left;
+}
+
+main section article div {
+    position: relative;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid var(--verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    color: var(--verde);
+    position: absolute;
+}
+
+p.descuento {
+    color: var(--verde);
+    font-size: var(--descuento);
+    width: 70%;
+}
+
+p.precio {
+    font-size: var(--precios);
+    width: 30%;
+}
+
+.caracteristicas__productos--tarjeta,
+.caracteristicas__productos--oferta {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article h5 {
+    display: none;
+    font-size: var(--descripcion);
+}
+
+/* Footer */
+
+footer {
+    padding: 50px 10px 10px;
+    background-color: white;
+}
+
+footer article {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer article i {
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+}
+
+footer span {
+    font-size: var(--parrafos);
+}
+
+@media (min-width: 361px) {
+    .seccion__productos--tarjeta1,
+    .seccion__productos--tarjeta2,
+    .seccion__productos--tarjeta3,
+    .seccion__productos--tarjeta4,
+    .seccion__productos--oferta1,
+    .seccion__productos--oferta2,
+    .seccion__productos--oferta3,
+    .seccion__productos--oferta4 {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    .seccion__productos--tarjeta2,
+    .seccion__productos--oferta2 {
+        display: block;
+}
+
+    header nav {
+        display: block;
+    }
+
+    header div.burger-menu {
+        display: none;
+    }
+
+    article h5 {
+        display: block;
+    }
+
+    header div.busqueda {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .seccion__productos--tarjeta3,
+    .seccion__productos--tarjeta4,
+    .seccion__productos--oferta3,
+    .seccion__productos--oferta4 {
+        display: block;
+}
+
+header div.logo__busqueda {
+    justify-content: space-between;
+}
+
+    header div p {
+        text-align: right;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+   }
+
+    header nav ul {
+        display: flex;
+
+    }
+
+    header nav ul li {
+        margin: 0 15px;
+
+    }
+
+    header nav ul.lista-superior {
+        margin-bottom: 0px;
+    }
+}

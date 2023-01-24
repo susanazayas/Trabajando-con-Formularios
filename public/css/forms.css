@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgb(165,165,165), white);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: darkblue;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+h4 {
+    margin-bottom: 0.7rem;
+}
+
+hr {
+    background: linear-gradient(90deg, black, white);
+    height: 3px;
+    margin-bottom: 3rem;
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container,
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.button-container {
+    align-items: center;
+}
+
+span.error-message {
+    color: tomato;
+    font-size: 0.7rem;
+}
+
+input.input-style {
+    border: none;
+    border-radius: 0.2rem;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    outline: none;
+}
+
+select.input-select {
+    border: none;
+    border-radius: 0.2rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.input-file-container {
+    background-color: white;
+    border-radius: 0.2rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+input.input-style::placeholder {
+    color: lightgray;
+}
+
+input.input-style:focus {
+    box-shadow: 0 0 6px red;
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+.form-container {
+    background: linear-gradient(lightgray, white);
+    padding: 1rem;
+    border-radius: 0.9rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    width: 90%;
+}
+
+/* Buttons */
+
+.btn {
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    height: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    margin: 1rem;
+    width: 8rem;
+}
+
+.btn-submit {
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(39,200,150,1) 90%);
+    color: rgb(75,75,75);
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+.btn-submit:hover {
+    color: rgb(175,175,175);
+    box-shadow: -5px -5px 10px rgb(255,255,255,0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,1) 0%, rgba(39,200,150,1) 90%);
+}
+
+.btn-reset {
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(39,200,150,1) 90%);
+    color: rgb(75,75,75);
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+.btn-reset:hover {
+    color: rgb(175,175,175);
+    box-shadow: -5px -5px 10px rgb(255,255,255,0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,1) 0%, rgba(39,200,150,1) 90%);
+}
+
+.btn-edit {
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(39,200,150,1) 90%);
+    color: rgb(75,75,75);
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+.btn-edit:hover {
+    color: rgb(175,175,175);
+    box-shadow: -5px -5px 10px rgb(255,255,255,0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,1) 0%, rgba(39,200,150,1) 90%);
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 80%;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.list-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*@media screen and (min-width: 475px) {
+    .input-container,
+    .button-container,
+    .input-file-container {
+        width: 90%;
+    }
+
+    .form-container {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .input-container,
+    .button-container,
+    .input-file-container {
+        width: 80%;
+    }
+
+    .form-container {
+        width: 50%;
+    }
+}
+*/
+
+@import url('login.css');
+@import url('register.css');
+@import url('editProfile.css');
